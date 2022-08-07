@@ -1,0 +1,50 @@
+body {
+    background-color: #202124;
+    font-family: Consolas, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #00b0bd;
+}
+
+.list {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.button {
+    font-family: Consolas, sans-serif;
+    background-color: #202124;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: rgba(0, 176, 189, 0.8);
+    transition: 0.15s;
+}
+
+.button:active {
+    background-color: rgba(0, 176, 189, 1);
+    transition: 0.15s;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+/* 
+#23395d
+#152238
+#229ebd
+*/
