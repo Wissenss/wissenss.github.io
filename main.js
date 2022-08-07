@@ -83,7 +83,7 @@ function renderList() {
     });
 
     //total amount field
-    if (records.length) {
+    if (records.length > 0) {
         const nameLabel = document.createElement("label");
         nameLabel.style = "text-align: left; width:60%; display: inline-block;";
         const costLabel = document.createElement("label");
