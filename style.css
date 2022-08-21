@@ -1,11 +1,39 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #202124;
     font-family: Consolas, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
+header {
+    background-color: white;
+    width: auto;
+    height: 300px;
+    padding-top: 100px;
+}
+
+.name {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+}
+
+h1 {}
+
+h2#subtitle {
+    margin-top: -10px;
     text-align: center;
     color: #00b0bd;
+}
+
+.panel {
+    margin-top: -10px;
+    background-color: white;
 }
 
 .list {
