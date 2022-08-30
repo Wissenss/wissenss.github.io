@@ -2,14 +2,14 @@
 let players = [
     {
         name: "maru",
-        score: 60,
+        score: 70,
         emoji: "ᕕ(⌐■_■)ᕗ ♪♬",
         name_color: "#CC4125",
         emoji_color: "#CC4125",
         profile: "https://github.com/MaruDeHabanero"
     }, {
         name: "Bass",
-        score: 46,
+        score: 48,
         emoji: "( ͡° ͜ʖ ͡°)",
         name_color: "#FF00FF",
         emoji_color: null,
@@ -29,9 +29,29 @@ let players = [
         emoji_color: null,
         profile: null
     }, {
-
-        name: "TEST",
-        score: 70,
+        name: "ErikDelgado",
+        score: 17,
+        emoji: "( ͡° ͜ʖ ͡°)",
+        name_color: "#FF00F0",
+        emoji_color: null,
+        profile: null
+    }, {
+        name: "Valijean37",
+        score: 12,
+        emoji: "( ͡° ͜ʖ ͡°)",
+        name_color: "#FF00F0",
+        emoji_color: null,
+        profile: null
+    }, {
+        name: "GoldNeptuno07",
+        score: 18,
+        emoji: "( ͡° ͜ʖ ͡°)",
+        name_color: "#FF00F0",
+        emoji_color: null,
+        profile: null
+    }, {
+        name: "bistraw",
+        score: 2,
         emoji: "( ͡° ͜ʖ ͡°)",
         name_color: "#FF00F0",
         emoji_color: null,
