@@ -281,6 +281,12 @@ useful hex color codes
     width: 100px;
     text-align: center;
     margin: auto;
+    text-decoration: none;
+}
+
+.blueLineButton:active
+{
+    text-decoration: none;
 }
 
 .blueLineButton:hover{
@@ -289,4 +295,5 @@ useful hex color codes
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.15s;
+    text-decoration: none;
 }

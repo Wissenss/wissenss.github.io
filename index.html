@@ -112,10 +112,10 @@
                     I am an engineer that likes to learn and build cool tech.
                 </p>
             </div>
-            <a id="contactMeButton" class="blueLineButton">Contact Me</a>
+            <a id="contactMeButton" class="blueLineButton" href="#contactForm">Contact Me</a>
             <div class="divline"></div>
         </section>
-        <section class="proyectList" id="proyectList" style="display: none;">
+        <!-- <section class="proyectList" id="proyectList" style="display: none;">
             <h2 id="sectionTitle">=> MyProjects.show()</h2>
             <div id="projects" class="list">
                 <article class="item">
@@ -135,27 +135,22 @@
                     </button>
                 </article>
             </div>
-        </section>
-        <!-- <div class="divline"></div> -->
+        </section> -->
+
+        <!-- SUBMIT FORM -->
         <section class="contactFormContainer" style="margin-top: 10px;">
-                <!-- <script>
-                    function sendMail(){
-                        pass;
-
-                    if(1===1){
-                        var element = getElementById("submitButton");
-                    }
-                    
-                    }
-                    
-                </script> -->
-
                 <label for="contactForm" class="contactFormTitle">Let's talk</label>
-                <form id="contactForm" class="contactForm" action="https://formsubmit.co/wissenschaftecht@gmail.com" method="POST">
+                <form id="contactForm" class="contactForm" action="https://formsubmit.co/bc7e8d32a936da6aee5fe384f692cd29" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <input id="name" type="text" name="company" placeholder="Company"/>
                     <input id="email" type="email" name="email" placeholder="Email"/>
                     <textarea id="" type="text" name="message" placeholder="Message"></textarea>
-                    <input type="submit" id=""submitButton""></button>
+                    <input type="submit" id="submitButton" style="display: none;"></button>
                     <label for="submitButton" class="blueLineButton">Send</label>
                 </form>
         </section>
