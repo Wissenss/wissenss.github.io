@@ -19,18 +19,17 @@ function sendEmail()
 
     console.log("sendEmail called");
 
-    //send the email
-    // Email.send({
-    //     Host : "smtp.gmail.com",
-    //     Username : "devemailservice5@gmail.com",
-    //     Password : "cR?&Oph@wlp*go9oDI&W",
-    //     To : 'wissenschaftecht@gmail.com',
-    //     From : email,
-    //     Subject : "wissenss.github.io/",
-    //     Body : message
-    // }).then(
-    //   message => alert(message)
-    // );
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "devemailservice5@gmail.com",
+        Password : "cR?&Oph@wlp*go9oDI&W",
+        To : 'wissenschaftecht@gmail.com',
+        From : email,
+        Subject : "wissenss.github.io/",
+        Body : message
+    }).then(
+      message => alert(message)
+    );
 }
 
 //GRAPHIC COMPONENTS
