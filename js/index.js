@@ -7,31 +7,61 @@ function onTexAreaInput(e)
     caller.style.height = caller.scrollHeight + 5+"px";
 }
 
+function onContactMeClick()
+{
+    document.getElementById("contactForm").scrollIntoView(); 
+    document.getElementById("emailAddress").focus();
+}
+
 function sendEmail()
 {
-
-    console.log("sendEmail called");
-
-    //get the info
+    //get info
     const contactForm = document.getElementById("contactForm-form");
-    const email = document.getElementById("emailAddress").value;
-    const message = document.getElementById("messageBox").value;
+    const emailAddress = document.getElementById("emailAddress")
+    const messageBox = document.getElementById("messageBox");
 
-    console.log(email);
-    console.log(message);
+    const email = emailAddress.value;
+    const message = messageBox.value;
 
-    console.log("sendEmail called");
+    //validation
+    if(message.trim() == ""){
+        alert("Message field can't be empty");
+        messageBox.focus();
+        return;
+    }
 
-    Email.send({
+    let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(!email.match(emailRegex))
+    {
+        alert("Please provide a valid email address");
+        email.focus();
+        return;
+    }
+
+    //send email
+    let status = Email.send({
         Host : "smtp.elasticemail.com",
         Username : "devemailservice5@gmail.com",
         Password : "37E2D37B37F140BB380125A82403F9C1CCB5",
         To : 'wissenschaftecht@gmail.com',
         From : "devemailservice5@gmail.com",
-        Subject : "wissenss.github.io/",
-        Body : message,
+        Subject : email + " through: wissenss.github.io/",
+        Body : message
     }).then(
-      message => alert(message)
+        message => {
+            if (message == "OK"){
+                //in success show modal
+                const modal = new bootstrap.Modal(document.getElementById('successModal'), {});
+                modal.show();
+
+                emailAddress.value = "";
+                messageBox.value = "";
+            }
+            else
+            {
+                alert(message);
+            }
+        }
     );
 }
 
@@ -40,7 +70,7 @@ function drawCard(project_json)
 {
     const section = document.getElementById("projects-list");
 
-    //creating the elements
+    //dom objects
     const container = document.createElement("div");
     container.classList.add("project-card");
 
