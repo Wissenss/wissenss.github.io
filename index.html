@@ -1,163 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/icon.jpg"/>
     <title>Leonardo Merino</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="text/script" href="script.js"/>
-    <link rel="icon" href="Assets/icon.jpg"/>
+
+    <!--Include Bootrstrap-->
+    <!--CDN versions for jquery and popper-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <link href="./css/bootstrap.css" media="all" rel="stylesheet"/>
+    <link href="./css/bootstrap.min.css" media="all" rel="stylesheet"/>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <!--Reboot Files-->
+    <link href="./css/index.css" rel="stylesheet"/>
+
+    <!--Cutstom Styles-->
+    <link href="./css/buttons.css" rel="stylesheet"/>
+
+    <!--Custom Scripts-->
+    <script src="js/index.js"></script>
+
+    <!--Email Service-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
+<body>
+    <!-- <nav class="navbar navbar-dark bg-custom-blue">
+        <!--aca pueden ir las secciones
+    </nav> -->
 
-<body>  
     <header>
-        <table style="width: 100%; border-spacing: 0px; height: 50px;">
-            <tr style="width:inherit">
-                <td style="width:30%;">
-                    <a id="homeButton" class="navButton" href="#top">
-                        <p>Home</p>
-                    </a>
-                    <a id="projectsButton" class="navButton" href="#proyectList">
-                        <p>Projects</p>
-                    </a>
-                </td>
-                <td style="width:40%;">
-                </td>
-                <td style="width:30%; text-align: right;">
-                    <a id="githubButton" class="navButton" style="text-align: right;" href="https://github.com/Wissenss" target="_blank">
-                        <p>Github</p>
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <h1>Leonardo Merino</h1>
+        <h2>Software Developer</h2>
+        <div>
+            <a class="contact" href="https://github.com/Wissenss" target="_blank"><img src="./Assets/github-logo.png" class="contact-logo"></a>
+            <a class="contact" href="https://www.linkedin.com/in/leonardo-merino-garfias-056b4b222/" target="_blank"><img src="./Assets/linkedin-logo.png" class="contact-logo"></a>
+        </div>
     </header>
-    <main>
-        <section class="title" id="pageTitle">
-            <div>
-                <h1 id="name">Leonardo Merino </h1>
-                <h2 id="position">Software Developer</h2> 
-            </div>
-            <div class="codeDecoration">
-                <div class="line 1">
-                    <div class="bar" style="width:30%;"></div>
-                    <div class="bar" style="width:5%;"></div>
-                    <div class="bar" style="width:20%;"></div>
-                </div>
-                <div class="line 2">
-                    <div class="bar" style="width:10%;"></div>
-                    <div class="bar" style="width:20%;"></div>
-                    <div class="bar" style="width:20%; "></div>
-                </div>
-                <div class="line 3">
-                    <div class="bar trans" style="width:1%; background-color:transparent;"></div>
-                    <div class="bar" style="width:5%; "></div>
-                    <div class="bar" style="width:27%; "></div>
-                </div>
-                <div class="line 4">
-                    <div class="bar" style="width:10%; "></div>
-                    <div class="bar" style="width:7%; "></div>
-                </div>
-                <div class="line 5">
-                    <div class="bar trans" style="width:2%; background-color:transparent;"></div>
-                    <div class="bar" style="width:8%; "></div>
-                </div>
-                <div class="line 6">
-                    <div class="bar" style="width:8%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar trans" style="width:2%; "></div>
-                    <div class="bar" style="width:9%; "></div>
-                    <div class="bar" style="width:7%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar" style="width:9%; "></div>
-                    <div class="bar" style="width:14%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar trans" style="width:1%; background-color: transparent;"></div>
-                    <div class="bar" style="width:5%; "></div>
-                    <div class="bar" style="width:12%; "></div>
-                    <div class="bar" style="width:20%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar" style="width:10%; "></div>
-                    <div class="bar" style="width:15%; "></div>
-                    <div class="bar" style="width:5%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar trans" style="width:2%; background-color: transparent;"></div>
-                    <div class="bar" style="width:30%; "></div>
-                    <div class="bar" style="width:15%; "></div>
-                    <div class="bar" style="width:20%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar trans" style="width:5%; background-color: transparent;"></div>
-                    <div class="bar" style="width:25%; "></div>
-                    <div class="bar" style="width:10%; "></div>
-                </div>
-                <div class="line">
-                    <div class="bar" style="width:20%; "></div>
-                    <div class="bar" style="width:15%; "></div>
-                    <div class="bar" style="width:20%; "></div>
-                </div>
-            </div>
-        </section>
-        <section class="aboutMe" id="aboutMe">
-            <div class="divline"></div>
-            <div id="content">
-                <h3>About Me</h3>
-                <p>
-                    I am an engineer that likes to learn and build cool tech.
-                </p>
-            </div>
-            <a id="contactMeButton" class="blueLineButton" href="#contactForm">Contact Me</a>
-            <div class="divline"></div>
-        </section>
-        <!-- <section class="proyectList" id="proyectList" style="display: none;">
-            <h2 id="sectionTitle">=> MyProjects.show()</h2>
-            <div id="projects" class="list">
-                <article class="item">
-                    <button class="button"
-                        onclick="window.location='https://wissenss.github.io/Expense%20Tracker/';">Expense
-                        Tracker_
-                    </button>
-                </article>
-                <article class="item">
-                    <button class="button" onclick="window.location='https://github.com/Wissenss/VASCII';">
-                        VASCII
-                    </button>
-                </article>
-                <article class="item">
-                    <button class="button" onclick="window.location='https://github.com/Wissenss/Manager';">
-                        Manager
-                    </button>
-                </article>
-            </div>
-        </section> -->
 
-        <!-- SUBMIT FORM -->
-        <section class="contactFormContainer" style="margin-top: 10px;">
-                <label for="contactForm" class="contactFormTitle">Let's talk</label>
-                <form id="contactForm" class="contactForm" action="https://formsubmit.co/bc7e8d32a936da6aee5fe384f692cd29" method="POST">
-                    <!-- Honeypot -->
-                    <input type="text" name="_honey" style="display: none">
+    <section id="about">
+        <p>I'm a software engineer that likes to learn and build cool stuff.
+        <a id="moreLink" data-toggle="collapse" href="#collapseAboutMore" role="button" aria-expanded="false" aria-controls="collapseAboutMore"> Know more.</a>
+        </p>
+        <div class="collapse" id="collapseAboutMore" style="padding-top: 0px; padding-bottom: 0px;">
+            <div class="card card-body" id="aboutMoreContent">
+              For the last year I've work prefessionally with c# and c++, developing both desktop and web applications. 
+              During this time I got my hands down with various source control software such as git and mercurial, and mantain diferent relational databases like Microsoft SQLServer and NexusDB. 
+              
+              I'm highly interested in embedded systems and machine learning. During my free time I've learn electronics along with arduino and python.
+              Needles to say, I like tech.
+            </div>
+        </div>
 
-                    <!-- Disable Captcha -->
-                    <input type="hidden" name="_captcha" value="false">
+        <button class="btn-white-on-blue" link="#about" onclick="document.getElementById('contactForm').scrollIntoView();">Contact Me</button>
+    </section>
 
-                    <!-- Succes Page -->
-                    <input type="hidden" name="_next" value="https://wissenss.github.io/succes.html">
+    <section id="projects" style="margin-top: 40px; margin-bottom: 40px;">
+        <h3>Projects.Show()</h3>
+        <div id="projects-list">
+            <script>
+                projects = [
+                    {
+                        "link" : "https://github.com/Wissenss/Sensei",
+                        "name" : "Sensei",
+                        "description" : "A discord bot to play Card-Jitsu",
+                        "stack" : ["python"]
+                    },{
+                        "link" : "https://github.com/Wissenss/PathFi",
+                        "name" : "PathFI",
+                        "description" : "A pathfinding algorithm visualizer desktop application",
+                        "stack" : ["python"]
+                    },{
+                        "link" : "https://github.com/Wissenss/Xatos",
+                        "name" : "Xatos",
+                        "description" : "Lightweight desktop application point of sale",
+                        "stack" : ["python", "cpp", "html"]
+                    }
+                ]
+    
+                projects.forEach(element => {
+                    drawCard(element);
+                });
+            </script>
+        </div>
+    </section>
 
-                    <input id="name" type="text" name="company" placeholder="Company"/>
-                    <input id="email" type="email" name="email" placeholder="Email"/>
-                    <textarea id="" type="text" name="message" placeholder="Message"></textarea>
-                    <input type="submit" id="submitButton" style="display: none;"></button>
-                    <label for="submitButton" class="blueLineButton">Send</label>
-                </form>
-        </section>
-    </main>
+    <section id="contactForm">
+        <h3 style="color: #00ADB5;">Let's get in touch</h3>
+        <form id="contactForm-form">
+            <div class="form-group" style="text-align: right;">
+                <label class="formLabel" for="emailAddress">Email address</label>
+                <input type="email" class="form-control" id="emailAddress"/>
+
+                <label class="formLabel" for="messageBox">Message</label>
+                <textarea id="messageBox" class="form-control" rows="5" input=""></textarea>
+            
+                <button class="btn-white-on-blue" style="margin-top: 10px; width: 150px;" type="button" onclick="sendEmail();">Send</button>
+            </div>
+        </form>
+
+        <script>
+            document.getElementById("messageBox").addEventListener("input", onTexAreaInput, false);
+        </script>
+    </section>
+
+    <footer>
+        <p>© 2023 Leonardo Merino</p>
+    </footer>
 </body>
-
 </html>
