@@ -14,8 +14,11 @@ function sendEmail()
 
     //get the info
     const contactForm = document.getElementById("contactForm-form");
-    const email = document.getElementById("emailAddress").textContent;
-    const message = document.getElementById("messageBox").textContent;
+    const email = document.getElementById("emailAddress").value;
+    const message = document.getElementById("messageBox").value;
+
+    console.log(email);
+    console.log(message);
 
     console.log("sendEmail called");
 
@@ -24,9 +27,9 @@ function sendEmail()
         Username : "devemailservice5@gmail.com",
         Password : "37E2D37B37F140BB380125A82403F9C1CCB5",
         To : 'wissenschaftecht@gmail.com',
-        From : email,
+        From : "devemailservice5@gmail.com",
         Subject : "wissenss.github.io/",
-        Body : message
+        Body : message,
     }).then(
       message => alert(message)
     );
