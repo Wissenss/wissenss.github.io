@@ -20,9 +20,9 @@ function sendEmail()
     console.log("sendEmail called");
 
     Email.send({
-        Host : "smtp.gmail.com",
+        Host : "smtp.elasticemail.com",
         Username : "devemailservice5@gmail.com",
-        Password : "cR?&Oph@wlp*go9oDI&W",
+        Password : "37E2D37B37F140BB380125A82403F9C1CCB5",
         To : 'wissenschaftecht@gmail.com',
         From : email,
         Subject : "wissenss.github.io/",
