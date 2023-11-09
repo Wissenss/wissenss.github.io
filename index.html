@@ -2,133 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Assets/icon.jpg"/>
-    <title>Leonardo Merino</title>
+    <title>Document</title>
 
-    <!--Include Bootrstrap-->
-    <!--CDN versions for jquery and popper-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
 
-    <link href="./css/bootstrap.css" media="all" rel="stylesheet"/>
-    <link href="./css/bootstrap.min.css" media="all" rel="stylesheet"/>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.min.css">
 
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    
-    <!--Reboot Files-->
-    <link href="./css/index.css" rel="stylesheet"/>
-
-    <!--Cutstom Styles-->
-    <link href="./css/buttons.css" rel="stylesheet"/>
-
-    <!--Custom Scripts-->
-    <script src="js/index.js"></script>
-
-    <!--Email Service-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <!-- <nav class="navbar navbar-dark bg-custom-blue">
-        <!--aca pueden ir las secciones
-    </nav> -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
 
     <header>
-        <h1>Leonardo Merino</h1>
-        <h2>Software Developer</h2>
-        <div>
-            <a class="contact" href="https://github.com/Wissenss" target="_blank"><img src="./Assets/github-logo.png" class="contact-logo"></a>
-            <a class="contact" href="https://www.linkedin.com/in/leonardo-merino-garfias-056b4b222/" target="_blank"><img src="./Assets/linkedin-logo.png" class="contact-logo"></a>
+        <div id="header-title">
+            <h1>Leonardo Merino</h1>
+            <h2>Software Developer</h2>
+            <a class="bi-chevron-compact-down" href="#experience"></a>
         </div>
     </header>
 
-    <section id="about">
-        <p>I'm a software engineer that likes to learn and build cool stuff.
-        <a id="moreLink" data-toggle="collapse" href="#collapseAboutMore" role="button" aria-expanded="false" aria-controls="collapseAboutMore"> Know more.</a>
-        </p>
-        <div class="collapse" id="collapseAboutMore" style="padding-top: 0px; padding-bottom: 0px;">
-            <div class="card card-body" id="aboutMoreContent">
-              For the last year I've work prefessionally with c# and c++, developing both desktop and web applications. 
-              During this time I got my hands down with various source control software such as git and mercurial, and mantain diferent relational databases like Microsoft SQLServer and NexusDB. 
-              
-              I'm highly interested in embedded systems and machine learning. During my free time I've learn electronics along with arduino and python.
-              Needles to say, I like tech.
-            </div>
-        </div>
-
-        <button class="btn-white-on-blue" link="#about" onclick="onContactMeClick()">Contact Me</button>
-    </section>
-
-    <section id="projects" style="margin-top: 40px; margin-bottom: 40px;">
-        <h3>Projects.Show()</h3>
-        <div id="projects-list">
-            <script>
-                projects = [
-                    {
-                        "link" : "https://github.com/Wissenss/Sensei",
-                        "name" : "Sensei",
-                        "description" : "A discord bot to play Card-Jitsu",
-                        "stack" : ["python"]
-                    },{
-                        "link" : "https://github.com/Wissenss/PathFi",
-                        "name" : "PathFI",
-                        "description" : "A pathfinding algorithm visualizer desktop application",
-                        "stack" : ["python"]
-                    },{
-                        "link" : "https://github.com/Wissenss/Xatos",
-                        "name" : "Xatos",
-                        "description" : "Lightweight desktop application point of sale",
-                        "stack" : ["python", "cpp", "html"]
-                    }
-                ]
-    
-                projects.forEach(element => {
-                    drawCard(element);
-                });
-            </script>
-        </div>
-    </section>
-
-    <section id="contactForm">
-        <h3 style="color: #00ADB5;">Let's get in touch</h3>
-        <form id="contactForm-form">
-            <div class="form-group" style="text-align: right;">
-                <label class="formLabel" for="emailAddress">Email address</label>
-                <input type="email" class="form-control" id="emailAddress"/>
-
-                <label class="formLabel" for="messageBox">Message</label>
-                <textarea id="messageBox" class="form-control" rows="5" input=""></textarea>
-            
-                <button class="btn-white-on-blue" style="margin-top: 10px; width: 150px;" type="button" onclick="sendEmail();">Send</button>
-            </div>
-        </form>
-
-        <script>
-            document.getElementById("messageBox").addEventListener("input", onTexAreaInput, false);
-        </script>
-
-        <!--Success Modal-->
-        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Successfully Delivered</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Thanks for reaching out. I'll get back to you as soon as posible!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <footer>
-        <p>© 2023 Leonardo Merino</p>
-    </footer>
+    <main>
+        <section id="experience">
+            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+        </section>
+    </main>
 </body>
 </html>

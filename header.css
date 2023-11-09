@@ -1,0 +1,13 @@
+header
+{
+    height: 100%;
+    display: flex;
+}
+
+#header-title
+{
+    flex-grow: 1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
