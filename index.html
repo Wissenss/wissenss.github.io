@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="site.css">  <!-- each section has its own style sheet -->
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="experience.css">
 </head>
 <body>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
@@ -19,14 +20,92 @@
         <div id="header-title">
             <h1>Leonardo Merino</h1>
             <h2>Software Developer</h2>
-            <a class="bi-chevron-compact-down" href="#experience"></a>
+        </div>
+
+        <div id="header-bottom-controls">
+            <a class="bi-chevron-compact-down" href="#experience" style="font-size: 40px;"></a>
         </div>
     </header>
 
     <main>
+
         <section id="experience">
-            <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+            <h3>Profesional Experience</h3>
+            <br></br>
+            <div id="history">
+                <div></div>
+                <div>
+                    <div class="history-line" style="height: 20px; border-radius: 5px 5px 0px 0px;"></div>
+                </div>
+                <div></div>
+
+                <div>
+                    <h5><span class="badge bg-primary">2023</span></h5>
+                </div>
+                <div class="history-left-column-cell">
+                    <div class="history-dot"></div>
+                    <div class="history-line" style="height: 100px;"></div>
+                </div>                
+                <div class="history-right-column-cell">   
+                    <h5>
+                        <strong>Junior Fullstack Developer at TrafficSystem</strong>
+                    </h5>
+                    <p>
+                        Web and desktop application development with ASP.NET Core and Windows Forms
+                    </p>
+                    <p>
+                        <span class="badge bg-success">Current position</span>
+                    </p>
+                </div>
+
+                <div></div>
+                <div>
+                    <div class="history-line"></div>
+                </div>
+                <div></div>
+
+                <div>
+                    <h5><span class="badge bg-primary">2022</span></h5>
+                </div>
+                <div class="history-middle-column-cell">
+                    <div class="history-dot"></div>
+                    <div class="history-line"></div>
+                </div>                
+                <div class="history-right-column-cell">   
+                    <h5>
+                        <strong>Help Desk at IConsulting México</strong>
+                    </h5>
+                    <p>
+                        Installation and maintainance of Microsoft SQL Servers. Plugin development
+                    </p>
+                </div>
+
+                <div></div>
+                <div>
+                    <div class="history-line"></div>
+                    <div class="history-line"></div>
+                </div>
+                <div></div>
+
+                <div>
+                    <h5><span class="badge bg-primary">2018</span></h5>
+                </div>
+                <div class="history-middle-column-cell">
+                    <div class="history-dot"></div>
+                    <div class="history-line" style="border-radius: 0px 0px 5px 5px;"></div>
+                </div>                
+                <div class="history-right-column-cell">   
+                    <h5>
+                        <strong>Customer Service Agent at Teleperformance</strong>
+                    </h5>
+                    <p>
+                        Assistance and collections for native english speakers
+                    </p>
+                </div>
+            </div>
+
         </section>
+
     </main>
 </body>
 </html>

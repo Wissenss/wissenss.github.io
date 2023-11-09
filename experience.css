@@ -1,0 +1,33 @@
+#history
+{
+    display: grid;
+    grid-template-columns: 70px 40px 1fr;
+    margin: auto;
+    width: 90vw;
+    max-width: 800px;
+}
+
+.history-middle-column-cell
+{
+    align-items: left;
+    justify-items: center;
+}
+
+.history-line
+{
+    margin: auto;
+    width: 5px;
+    height: 60px;
+    background-color: var(--bs-white);
+}
+
+.history-dot
+{
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    width: 15px; 
+    height: 15px;
+    border-radius: 10px;
+    background-color: var(--bs-white);
+}
