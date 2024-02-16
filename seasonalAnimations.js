@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("wololo")
-
   const currentDate = new Date();
   const month = currentDate.getMonth();
 
-  if (month != 11)
+  if (month != 12) //hide the snowflakes animation if not in dicember
   {
     let snowflakesList = document.getElementsByClassName("snowflake");
     
