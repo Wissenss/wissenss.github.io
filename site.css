@@ -16,3 +16,19 @@ section{
 .section-title{
     
 }
+
+main
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+section{
+    margin-top: 20px;
+}
+
+#about-me
+{
+    display: flex;
+    flex-wrap: wrap;
+}
