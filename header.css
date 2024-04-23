@@ -2,17 +2,31 @@ header
 {
     min-height: 600px;
     max-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 100px;
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+}
+
+#header-dog
+{
+    justify-self: center;
+    align-self: center;
 }
 
 #header-title
 {
-    flex-grow: 90;
     justify-self: center;
     align-self: center;
-    justify-items: center;
     text-align: center;
+}
+
+#header-title h3
+{
+    display: flex;
+
+    justify-content: center;
+    gap: 40px;
 }
 
 #header-bottom-controls
@@ -20,4 +34,12 @@ header
     flex-grow: 10;
     text-align: center;
     height: 50px;
+}
+
+@media (max-width: 800px)
+{
+    #header-dog
+    {
+        display: none;
+    }
 }

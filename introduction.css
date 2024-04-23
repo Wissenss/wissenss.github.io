@@ -1,11 +1,4 @@
 #introduction
 {
-    text-align: left;
-
-    max-width: 500px;
-}
-
-#about-me > div > img
-{
-    max-height: 200px;
+    text-align: justify;
 }
