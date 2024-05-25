@@ -29,6 +29,17 @@ header
     gap: 40px;
 }
 
+#header-title h3 a{
+    transition: 0.15s;
+}
+
+#header-title h3 a:hover
+{
+    font-size: 5rem;
+
+    transition: 0.15s;
+}
+
 #header-bottom-controls
 {
     flex-grow: 10;
