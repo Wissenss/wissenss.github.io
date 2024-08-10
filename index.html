@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Leonardo Merino</title>
+
+  <!-- font -->
+  <!-- link last update: 2024 08 04 -->
+  <!-- [TODO] buscar una font mas cool -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="theme.css"/>
+  <link rel="stylesheet" href="./site.css"/>
+
+  <link rel="stylesheet" href="./home/home.css"/>
+  <link rel="stylesheet" href="./home/stackSlider.css"/>
+  <link rel="stylesheet" href="./home/projectsCatalog.css"/>
+
+  <!-- bootstrap icons -->
+  <!-- link last update: 2024 08 04 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- stack icons -->
+  <!-- link last update: 2024 08 04 -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- vue framework -->
+  <!-- link last update: 2024 08 05 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body >
+  <nav>
+    <a class="bi-list nav-burger-button"></a>
+
+    <div class="options">
+      <div class="left">
+        <a href="#">Leonardo Merino</a>
+      </div>
+
+      <div class="right">
+        <a href="#about-me">About me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app">
+    <home-page></home-page>
+  </main>
+
+  <footer>
+    <div class="footer-name">
+      <span>© 2024 Leonardo Merino. All rights reserved.</span>
+    </div>
+
+    <div class="footer-links">
+      <a class="bi-github" href="https://github.com/Wissenss" target="_blank"></a>
+      <a class="bi-linkedin" href="https://www.linkedin.com/in/leonardo-merino-056b4b222/" target="_blank"></a>
+      <a class="bi-stack-overflow" href="https://stackoverflow.com/users/16513233/leonardo-merino" target="_blank"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- import app -->
+<script src="./main.js"></script>
+
+<!-- import components -->
+<script src="./home/home.js"></script>
+<script src="./home/linkTreeItem.js"></script>
+<script src="./home/stackSlider.js"></script>
+<script src="./home/projectsCatalog.js"></script>
+<script src="./home/projectDisplay.js"></script>
+
+<!-- mount app -->
+<script>
+  const mountedApp = app.mount('#app');
+</script>

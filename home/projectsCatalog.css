@@ -1,0 +1,92 @@
+.projects-catalog {
+  width: 100%;
+}
+
+.catalog-filter {
+  margin: auto;
+  width: fit-content;
+}
+
+.catalog-filter .catalog-option {
+  color: var(--text-highlight-info-transparent);
+  border: 1px solid var(--text-highlight-info-transparent);
+  border-right: none;
+  background-color: var(--background-dark);
+  padding: 2px 20px;
+}
+
+.catalog-filter .catalog-option:first-child {
+  /* border-radius: 20px 0px 0px 20px; */
+}
+
+.catalog-filter .catalog-option:last-child {
+  border-right: 1px solid var(--text-highlight-info-transparent);
+  /* border-radius: 0px 20px 20px 0px; */
+}
+
+.catalog-filter .catalog-option:hover{
+  /* background-color: var(--text-highlight-info-transparent); */
+  cursor: pointer;
+  color: var(--text-highlight-info);
+}
+
+.catalog-filter .catalog-option.selected{
+  background-color: var(--text-highlight-info-transparent);
+  color: var(--text-highlight-info);
+}
+
+.projects-catalog .projects{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 40px 0;
+}
+
+/* Estilos para el project display */
+
+.project-display{
+  display: block;
+  text-decoration: none;
+  text-align: justify;
+  background-color: var(--background-darker);
+}
+
+.project-display .image-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  overflow: hidden;
+}
+
+.project-display img {
+  object-fit: cover;
+  flex-shrink: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.project-display .text-container {
+  width: 250px;
+  padding: 10px;
+}
+
+.stack-tag{
+  font-weight: lighter;
+  font-size: small;
+  font-family: sans-serif;
+  /* background-color: var(--text-highlight-info-transparent); */
+  color: var(--text-highlight-info-transparent);
+  border-left: 1px solid var(--text-highlight-info-transparent);
+  padding-left: 3px;
+  margin-right: 10px;
+
+  transition: 0.15s;
+}
+
+.stack-tag:hover{
+  color: var(--text-highlight-info);
+  border-left: 1px solid var(--text-highlight-info);
+
+  transition: 0.15s;
+}

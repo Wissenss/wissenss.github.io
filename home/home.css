@@ -1,0 +1,190 @@
+.home-page header 
+{
+  background-color: var(--background-darker);
+
+  position: relative;
+
+  height: 600px;
+  /* overflow: hidden; */
+}
+
+.home-page .background {
+  position: relative;
+
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-page .background img {
+  /* filter: grayscale(1) invert(0.8); */
+  filter: grayscale(1) ;
+  /* opacity: 0.7; */
+}
+
+.home-page .background .filter {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(17, 24, 60);
+  opacity: 0.4; 
+}
+
+.home-page .background .filter.second {
+  background-color: rgba(0, 0, 255);
+  opacity: 0.1;
+
+  display: none;
+}
+
+.home-page header .main-text {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+
+  justify-content: space-between;
+  gap: 20px;
+
+  align-content: center;
+
+  position: absolute;
+  top: 0px;
+  bottom: -200px;
+  z-index: 1;
+
+  --title-max-height: 100px;
+}
+
+.home-page header .main-text div{
+  flex: 1;
+  height: var(--title-max-height);
+}
+
+.home-page header .main-text .title, .home-page header .main-text .pin-points  {
+  margin: auto;
+}
+
+.home-page header .main-text .title {
+  text-align: right;
+}
+
+.home-page .title h1, h2 {
+  margin: 5px 0px;
+}
+
+@keyframes slide-down {
+  0%, 10% {
+    transform: translateY(0%);
+  }
+  15%, 25% {
+    transform: translateY(-100%);
+  }
+  30%, 35% {
+    transform: translateY(-200%);
+  }
+  40%, 45%{
+    transform: translateY(-300%)
+  }
+  50%, 100%{
+    transform: translateY(-300%);
+  }
+}
+
+.home-page .sub-titles{
+  --sub-title-height: 34px; 
+  height: var(--sub-title-height) !important;
+  overflow: hidden;
+}
+
+.home-page .sub-titles h2{
+  height: var(--sub-title-height);
+  margin: 0px;
+  animation: slide-down 16s infinite;
+}
+
+.home-page .section-divider
+{
+  width: 100%;
+  /* border-radius: 3px; */
+  height: 1px;
+  background-color: var(--text-main-dark);
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px)
+{
+  .home-page header {
+    display: block;
+  }
+
+  .home-page .sub-titles, .home-page .title h1{
+    text-align: center;
+  }
+
+  .home-page .pin-points {
+    display: none;
+  }
+}
+
+/* estilos para el link tree */
+
+.link-tree ul
+{
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  height: 100%;
+
+  margin: 0px;
+  padding: 0px;
+  /* margin-block-start: none;
+  margin-block-end: none; */
+}
+
+.link-tree-item{
+  font-size: 24px;
+}
+
+.link-tree-item .item-icon
+{
+  margin-right: 10px;
+}
+
+/* estilos para los pin points */
+
+.pin-points{
+  border-left: 1px solid white;
+}
+
+.pin-points ul{
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  height: 100%;
+
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.pin-points ul li{
+  transition: 0.15s;
+}
+
+.pin-points ul li:hover{
+  color: var(--text-highlight-info);
+  transition: 0.5s;
+}

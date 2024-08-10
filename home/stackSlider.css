@@ -1,0 +1,58 @@
+.stack-slider
+{
+  padding: 40px 0;
+
+  width: 80%;
+  margin: auto;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: relative;
+}
+
+.stack-slider:hover .stack-slider-slide{
+  animation-play-state: paused;
+}
+
+.stack-slider::before,
+.stack-slider::after{
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.stack-slider::before{
+  left: 0;
+  background: linear-gradient(to left, var(--transparent), var(--background-dark));
+}
+
+.stack-slider::after{
+  right: 0;
+  background: linear-gradient(to right, var(--transparent), var(--background-dark));
+}
+
+@keyframes wololo {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+.stack-slider-slide
+{
+  display: inline-block;
+  animation: 80s wololo infinite linear;
+}
+
+.stack-slider-slide span
+{
+  font-size: 30px;
+  margin: 0 60px;
+  color: var(--text-highlight-info-transparent)
+}
