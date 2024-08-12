@@ -1,4 +1,4 @@
-app.component('home-page', {
+const homeComponent = {
   template:
   /*html*/
   `
@@ -42,8 +42,6 @@ app.component('home-page', {
       </div>
     </header>
 
-    
-
     <section id="about-me">
       <h2>About me</h2>
       <h3>I like to learn and build cool stuff!</h3>
@@ -72,4 +70,6 @@ app.component('home-page', {
       return lastExperience.getFullYear() - firstExperience.getFullYear();
     }
   }
-})
+}
+
+app.component('home-page', homeComponent);
