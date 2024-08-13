@@ -1,7 +1,8 @@
 :root
 {
   /* color pallete */
-  --background-darker: rgb(17, 24, 39);
+  /* --background-darker: rgb(17, 24, 39); */
+  --background-darker: #151826;
   --background-dark: #111E32;
   --text-main-dark: #ffffff;
 

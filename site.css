@@ -4,7 +4,7 @@ html{
 
 body{
   width: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
   scrollbar-width: none;
   overflow-y: scroll;
   /* overflow: hidden; */
@@ -56,13 +56,60 @@ nav .nav-burger-button {
 
 @media (max-width: 700px)
 {
+  nav {
+    padding: 0px;
+    height: 7vh;
+
+    display: flex;
+
+    background: var(--background-darker);
+  }
+
   nav .nav-burger-button {
     display: block;
-    padding: 0 20px;
+    padding: 0px 20px;
+
+    justify-self: center;
+    align-self: center;
   }
 
   nav .options {
-    display: none;
+    min-width: 200px;
+
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    background: var(--background-darker);
+
+    height: 93vh;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 1s ease-out;
+
+    justify-content: flex-start;
+
+    padding: 0px 20px;
+  }
+
+  nav .options.hidden{
+    transition: left 1s ease-in;
+    left: -100%;
+  }
+
+  nav .options div{
+    padding: 20px 0px 20px 0px;
+  }
+
+  nav .options div.left{
+    border-bottom: 1px solid var(--text-highlight-info-transparent);
+  }
+
+  nav .options div.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 }
 
