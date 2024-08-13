@@ -32,42 +32,20 @@
   <!-- link last update: 2024 08 05 -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- vue router -->
+  <!-- link last update: 2024 08 12 -->
+  <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+
 </head>
 <body >
-  <nav>
-    <a class="bi-list nav-burger-button" onclick="toggleNav();"></a>
-
-    <div class="options hidden">
-      <div class="left">
-        <a onclick="hideNav(); scrollToSelector('.main-text')">Leonardo Merino</a>
-      </div>
-
-      <div class="right">
-        <a onclick="hideNav(); scrollToSelector('#about-me');">About me</a>
-        <a onclick="hideNav(); scrollToSelector('#experience')">Experience</a>
-        <a onclick="hideNav(); scrollToSelector('#projects')">Projects</a>
-      </div>
-    </div>
-  </nav>
-
-  <main id="app">
+  <div id="app">
     <home-page></home-page>
   </main>
-
-  <footer>
-    <div class="footer-name">
-      <span>© 2024 Leonardo Merino. All rights reserved.</span>
-    </div>
-
-    <div class="footer-links">
-      <a class="bi-github" href="https://github.com/Wissenss" target="_blank"></a>
-      <a class="bi-linkedin" href="https://www.linkedin.com/in/leonardo-merino-056b4b222/" target="_blank"></a>
-      <a class="bi-stack-overflow" href="https://stackoverflow.com/users/16513233/leonardo-merino" target="_blank"></a>
-    </div>
-  </footer>
-
 </body>
 </html>
+
+<!-- import utils -->
+<script src="utilities.js"></script>
 
 <!-- import app -->
 <script src="./main.js"></script>
@@ -79,7 +57,12 @@
 <script src="./home/projectsCatalog.js"></script>
 <script src="./home/projectDisplay.js"></script>
 
+<script src="./naota/naota.js"></script>
+
+<!-- import router -->
+<script src="./router.js"></script>
+
 <!-- mount app -->
 <script>
-  const mountedApp = app.mount('#app');
+  const mountedApp = app.use(router).mount('#app');
 </script>
