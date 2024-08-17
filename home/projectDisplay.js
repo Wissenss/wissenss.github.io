@@ -8,7 +8,6 @@ app.component('project-display', {
       type: Array,
       required: true
     },
-
     name: {
       type: String,
       required: true

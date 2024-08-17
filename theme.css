@@ -23,6 +23,7 @@
 body{
   background-color: var(--background-dark);
   font-family: "Barlow Semi Condensed", sans-serif;
+  color: var(--text-main-dark);
 }
 
 h1, h2, h3, h4, p, span, li, a {
@@ -58,4 +59,8 @@ section{
 
 .text-highlight {
   color: var(--text-highlight-info)
+}
+
+.text-highlight-transparent {
+  color: var(--text-highlight-info-transparent)
 }

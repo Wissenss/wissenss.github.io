@@ -46,7 +46,7 @@ const homeComponent = {
       <h2>About me</h2>
       <h3>I like to learn and build cool stuff!</h3>
       <p>
-        For the last two years I've worked prefessionally with c#, c++ and javascript, developing desktop and web applications. During this time I've become experience with various source control software such as git and mercurial, and mantain relational databases like Microsoft SQLServer and NexusDB. I'm highly interested in mastering new technologies and make ideas become real.
+        For the last three years I've worked prefessionally building desktop and web applications. During this time I've become experience with fullstack development, source control and relational databases. I'm highly interested in mastering new technologies and make ideas become real.
       </p>
 
       <stack-slider></stack-slider>

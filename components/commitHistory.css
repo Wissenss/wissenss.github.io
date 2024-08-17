@@ -1,0 +1,36 @@
+.commit-history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space;
+  padding: 15px;
+
+  max-width: 500px;
+}
+
+.commit-history .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.commit-history .commit {
+  display: inline-flex;
+  width: 500px;
+  text-overflow: ellipsis;
+}
+
+.naota-page .top-bar h3 span{
+  margin-right: 10px;
+}
+
+.commit-history .commit .sha {
+  min-width: 80px;
+  display: block;
+}
+
+.commit-history .commit .message {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

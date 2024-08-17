@@ -1,3 +1,5 @@
+const DEBUG = true;
+
 const app = Vue.createApp({
   data() { 
     return {}
@@ -8,16 +10,16 @@ const app = Vue.createApp({
   <nav>
     <a onclick="toggleNav();" class="bi-list nav-burger-button"></a>
 
-    <div class="options">
+    <div class="options hidden">
       <div class="left">
         <router-link onclick="hideNav(); scrollToSelector('.main-text');" to="/">Leonardo Merino</router-link>
       </div>
 
       <div class="right">
-        <a onclick="hideNav(); scrollToSelector('#about-me');">About me</a>
-        <a onclick="hideNav(); scrollToSelector('#experience')">Experience</a>
-        <a onclick="hideNav(); scrollToSelector('#projects')">Projects</a>
-        <router-link onclick="hideNav();" to="/naota">Naota</router-link>
+        <router-link onclick="hideNav(); scrollToSelector('#about-me');" to="/">About me</router-link>
+        <!-- <router-link onclick="hideNav(); scrollToSelector('#experience')" to="/">Experience</router-link> -->
+        <router-link onclick="hideNav(); scrollToSelector('#projects')" to="/">Projects</router-link>
+        <!-- <router-link v-if="$route.path === '/'" onclick="hideNav(); scrollToSelector('.naota-page')" to="/naota">Naota</router-link> -->
       </div>
     </div>
   </nav>

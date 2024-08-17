@@ -1,0 +1,21 @@
+.link-button {
+  /* padding: 5px; */
+  /* icon=""border: 1px solid var(--text-highlight-info-transparent); */
+  color: var(--text-highlight-info-transparent);
+  /* text-decoration: none; */
+  /* border-radius: 1px; */
+}
+
+.link-button:hover span, .link-button:hover{
+  color: var(--text-highlight-info);
+}
+
+.link-button:hover {
+  /* background-color: var(--text-highlight-info-transparent); */
+}
+
+/* .link-button span {
+  color:  var(--text-highlight-info-transparent);
+  margin-left: 10px;
+} */
+
