@@ -40,13 +40,13 @@ nav .options div{
 nav a{
   margin: 0px;
   padding: 10px;
-  color: var(--text-highlight-info-transparent);
+  color: var(--highlight-main-transparent);
   transition: 0.15s;
   text-decoration: none;
 }
 
 nav a:hover{
-  color: var(--text-highlight-info);
+  color: var(--highlight-main);
   transition: 0.15s;
 }
 
@@ -62,7 +62,7 @@ nav .nav-burger-button {
 
     display: flex;
 
-    background: var(--background-darker);
+    background: var(--background-main);
   }
 
   nav .nav-burger-button {
@@ -79,7 +79,7 @@ nav .nav-burger-button {
     position: absolute;
     top: 7vh;
     left: 0;
-    background: var(--background-darker);
+    background: var(--background-main);
 
     height: 93vh;
 
@@ -103,7 +103,7 @@ nav .nav-burger-button {
   }
 
   nav .options div.left{
-    border-bottom: 1px solid var(--text-highlight-info-transparent);
+    border-bottom: 1px solid var(--highlight-main-transparent);
   }
 
   nav .options div.right{
@@ -134,11 +134,11 @@ footer div{
 }
 
 footer span{
-  color: var(--text-highlight-info-transparent);
+  color: var(--highlight-main-transparent);
 }
 
 .footer-name{
-  color: var(--text-highlight-info-transparent);
+  color: var(--highlight-main-transparent);
 }
 
 .footer-links{
@@ -148,12 +148,12 @@ footer span{
 .footer-links a{
   font-size: 20px;
   margin-left: 30px;
-  color: var(--text-highlight-info-transparent);
+  color: var(--highlight-main-transparent);
   transition: 0.15s;
 }
 
 .footer-links a:hover{
-  color: var(--text-highlight-info);
+  color: var(--highlight-main);
   transition: 0.15s;
 }
 

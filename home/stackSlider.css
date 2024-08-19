@@ -27,12 +27,12 @@
 
 .stack-slider::before{
   left: 0;
-  background: linear-gradient(to left, var(--transparent), var(--background-dark));
+  background: linear-gradient(to left, var(--transparent), var(--background-secondary));
 }
 
 .stack-slider::after{
   right: 0;
-  background: linear-gradient(to right, var(--transparent), var(--background-dark));
+  background: linear-gradient(to right, var(--transparent), var(--background-secondary));
 }
 
 @keyframes wololo {
@@ -54,5 +54,5 @@
 {
   font-size: 30px;
   margin: 0 60px;
-  color: var(--text-highlight-info-transparent)
+  color: var(--highlight-main-transparent)
 }

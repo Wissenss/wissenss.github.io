@@ -70,3 +70,75 @@ function scrollToSelector(selector)
     behavior: 'smooth'
   });
 }
+
+function setLightTheme()
+{
+    const documentStyle = document.documentElement.style;
+
+    // backgournd colors
+    documentStyle.setProperty("--background-main", "var(--background-main-light)");
+    documentStyle.setProperty("--background-secondary", "var(--background-secondary-light)");
+
+    // text colors
+    documentStyle.setProperty("--text-main", "var(--text-main-light)");
+    documentStyle.setProperty("--text-secondary", "var(--text-secondary-light)");
+
+    // highlights
+    documentStyle.setProperty("--highlight-main", "var(--highlight-main-light)");
+    documentStyle.setProperty("--highlight-main-transparent", "var(--highlight-main-transparent-light)");
+
+    // home page exclusive
+    documentStyle.setProperty("--home-filter", "var(--home-filter-light)");
+    documentStyle.setProperty("--home-color-filter", "var(--home-color-filter-light)");
+}
+
+function setDarkTheme()
+{
+    const documentStyle = document.documentElement.style;
+
+    // backgournd colors
+    documentStyle.setProperty("--background-main", "var(--background-darker)");
+    documentStyle.setProperty("--background-secondary", "var(--background-dark)");
+
+    // text colors
+    documentStyle.setProperty("--text-main", "var(--text-main-dark)");
+    documentStyle.setProperty("--text-secondary", "var(--text-secondary-dark)");
+
+    // highlights
+    documentStyle.setProperty("--highlight-main", "var(--highlight-main-dark)");
+    documentStyle.setProperty("--highlight-main-transparent", "var(--highlight-main-transparent-dark)");
+
+    // home page exclusive
+    documentStyle.setProperty("--home-filter", "var(--home-filter-dark)");
+    documentStyle.setProperty("--home-color-filter", "var(--home-color-filter-dark)");
+}
+
+function setTheme(ligthMode)
+{
+    const button = document.querySelector(".theme-button");
+
+    button.classList.remove("bi-moon-fill");
+    button.classList.remove("bi-sun-fill");
+
+    if (ligthMode)
+    {
+        setLightTheme();
+
+        button.classList.add("bi-sun-fill");
+    }
+    else 
+    {
+        setDarkTheme();
+
+        button.classList.add("bi-moon-fill");
+    }
+
+    localStorage.setItem("ligthMode", ligthMode);
+}
+
+function toggleTheme()
+{
+    LIGHT_MODE = !LIGHT_MODE;
+
+    setTheme(LIGHT_MODE);
+}

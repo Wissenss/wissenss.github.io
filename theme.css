@@ -1,18 +1,50 @@
 :root
 {
   /* color pallete */
+  /* dark theme definition */
   /* --background-darker: rgb(17, 24, 39); */
   --background-darker: #151826;
   --background-dark: #111E32;
-  --text-main-dark: #ffffff;
 
-  --background-light: #ffffff;
-  --text-main-light: #000000;
+  --text-main-dark: #ffffff;
+  --text-secondary-dark: #ffffff; /* must define color */
+
+  --highlight-main-dark: #3498db;
+  --highlight-main-transparent-dark: #3498db65;
+
+  --home-filter-dark: grayscale(1);
+  --home-color-filter-dark: rgba(17, 24, 60);
+
+  /* light theme definition */
+  /* inspiration: https://dribbble.com/shots/20866856-Smooth-transitions-between-light-and-dark-themes */
+  --background-main-light: #FFFFFF;
+  --background-secondary-light: #F0F4FA;
+  
+  --text-main-light: #333846;
+  --text-secondary-light: #787B88;
+
+  --highlight-main-light: #396EE6;
+  --highlight-main-transparent-light: #396de68f;
+
+  --home-filter-light: grayscale(1) invert(1);
+  --home-color-filter-light: rgb(30, 90, 231);
+
+  /* theme variables */
+  /* this are the ones to actually use */
+  /* [TODO] actually change the rest of the document... */
+  --background-main: var(--background-darker);
+  --background-secondary: var(--background-dark);
+
+  --text-main: var(--text-main-dark);
+  --text-secondary: var(--text-secondary-dark);
+
+  --highlight-main: var(--highlight-main-dark);
+  --highlight-main-transparent: var(--highlight-main-transparent-dark);
 
   --transparent: rgba(255, 255, 255, 0);
 
-  --text-highlight-info: #3498db;
-  --text-highlight-info-transparent: #3498db65;
+  --home-filter: var(--home-filter-dark);
+  --home-color-filter: var(--home-color-filter-dark);
 
   /* breakpoints */
   --small-screen-px: 700px;
@@ -21,19 +53,19 @@
 }
 
 body{
-  background-color: var(--background-dark);
+  background-color: var(--background-secondary);
   font-family: "Barlow Semi Condensed", sans-serif;
-  color: var(--text-main-dark);
+  color: var(--text-main);
 }
 
 h1, h2, h3, h4, p, span, li, a {
-  color: var(--text-main-dark);
+  color: var(--text-main);
 }
 
 p{
   text-align: justify;
-  font-size: 17px;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 h1 {
@@ -42,6 +74,7 @@ h1 {
 }
 
 h2{
+  /* font-size: 2rem; */
   font-weight: 400;
 }
 
@@ -58,9 +91,9 @@ section{
 }
 
 .text-highlight {
-  color: var(--text-highlight-info)
+  color: var(--highlight-main)
 }
 
 .text-highlight-transparent {
-  color: var(--text-highlight-info-transparent)
+  color: var(--highlight-main-transparent)
 }

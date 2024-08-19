@@ -1,4 +1,5 @@
 const DEBUG = true;
+let LIGHT_MODE = false; 
 
 const app = Vue.createApp({
   data() { 
@@ -20,6 +21,7 @@ const app = Vue.createApp({
         <!-- <router-link onclick="hideNav(); scrollToSelector('#experience')" to="/">Experience</router-link> -->
         <router-link onclick="hideNav(); scrollToSelector('#projects')" to="/">Projects</router-link>
         <!-- <router-link v-if="$route.path === '/'" onclick="hideNav(); scrollToSelector('.naota-page')" to="/naota">Naota</router-link> -->
+        <a class="theme-button bi-moon-fill" onclick="toggleTheme();"></a>
       </div>
     </div>
   </nav>

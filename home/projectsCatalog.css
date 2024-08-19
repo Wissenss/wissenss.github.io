@@ -8,10 +8,10 @@
 }
 
 .catalog-filter .catalog-option {
-  color: var(--text-highlight-info-transparent);
-  border: 1px solid var(--text-highlight-info-transparent);
+  color: var(--highlight-main-transparent);
+  border: 1px solid var(--highlight-main-transparent);
   border-right: none;
-  background-color: var(--background-dark);
+  background-color: var(--background-secondary);
   padding: 2px 20px;
 }
 
@@ -20,19 +20,19 @@
 }
 
 .catalog-filter .catalog-option:last-child {
-  border-right: 1px solid var(--text-highlight-info-transparent);
+  border-right: 1px solid var(--highlight-main-transparent);
   /* border-radius: 0px 20px 20px 0px; */
 }
 
 .catalog-filter .catalog-option:hover{
-  /* background-color: var(--text-highlight-info-transparent); */
+  /* background-color: var(--highlight-main-transparent); */
   cursor: pointer;
-  color: var(--text-highlight-info);
+  color: var(--highlight-main);
 }
 
 .catalog-filter .catalog-option.selected{
-  background-color: var(--text-highlight-info-transparent);
-  color: var(--text-highlight-info);
+  background-color: var(--highlight-main-transparent);
+  color: var(--highlight-main);
 }
 
 .projects-catalog .projects{
@@ -49,7 +49,7 @@
   display: block;
   text-decoration: none;
   text-align: justify;
-  background-color: var(--background-darker);
+  background-color: var(--background-main);
 }
 
 .project-display .image-container {
@@ -75,9 +75,9 @@
   font-weight: lighter;
   font-size: small;
   font-family: sans-serif;
-  /* background-color: var(--text-highlight-info-transparent); */
-  color: var(--text-highlight-info-transparent);
-  border-left: 1px solid var(--text-highlight-info-transparent);
+  /* background-color: var(--highlight-main-transparent); */
+  color: var(--highlight-main-transparent);
+  border-left: 1px solid var(--highlight-main-transparent);
   padding-left: 3px;
   margin-right: 10px;
 
@@ -85,8 +85,8 @@
 }
 
 .stack-tag:hover{
-  color: var(--text-highlight-info);
-  border-left: 1px solid var(--text-highlight-info);
+  color: var(--highlight-main);
+  border-left: 1px solid var(--highlight-main);
 
   transition: 0.15s;
 }

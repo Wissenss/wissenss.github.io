@@ -72,4 +72,8 @@
 <!-- mount app -->
 <script>
   const mountedApp = app.use(router).mount('#app');
+
+  LIGHT_MODE = localStorage.getItem("ligthMode") === 'true';
+  
+  setTheme(LIGHT_MODE);
 </script>
