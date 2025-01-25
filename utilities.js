@@ -92,6 +92,23 @@ function setLightTheme()
     documentStyle.setProperty("--home-color-filter", "var(--home-color-filter-light)");
 }
 
+// Resume github link
+// link last update: 2024 08 22
+
+const resumeURI = "https://github.com/Wissenss/cv/raw/master/Leonardo_Merino_Resume.pdf";
+
+function previewCV()
+{
+    url = `https://docs.google.com/viewer?url=${resumeURI}`;
+
+    open(url)
+}
+
+function downloadCV()
+{
+    open(resumeURI);
+}
+
 function setDarkTheme()
 {
     const documentStyle = document.documentElement.style;

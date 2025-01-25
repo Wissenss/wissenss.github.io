@@ -15,8 +15,39 @@ const naotaComponent = {
                 </div>
             </div>
         </header>    
+        
+        <section class="flex-section">
+            <div>
+                <h2>What</h2>
+                <p>
+                    This is my personal discord bot, every now and then I hope in and add some features that I think will be interesting. As of the moment of writing this
+                    words it be used to:
 
-        <commit-history :history="commits" :count="commitsCount" :days="daysOfUpdates"></commit-history>
+                    <ul>
+                        <li>Play music</li>
+                        <li>Solve chess puzzles</li>
+                        <li>Control my PC</li>
+                        <li>Unlock achivements</li>
+                        <li>Query twitter</li>
+                    </ul>
+
+                    If you wish to try it out please <a href="https://discord.com/invite/gwPrgp5fxM">join the discord server here</a>. I don't mantain a public invite link for your own server but DM me on discord and I will be happy to provide one.
+                </p>
+            </div>
+
+            <div class="commit-history-container">
+                <commit-history :history="commits" :count="commitsCount" :days="daysOfUpdates"></commit-history>
+            </div>
+        </section>
+
+        <section>
+            <h2>Disclaimer</h2>
+            <p>
+                The Naota project is developed for academic popuses only. We do not hold ourselves responsable for the improper use of this code base. 
+                Please review the <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy">Discord Developer Policy</a> 
+                and <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Youtube API Terms of Service</a> before moving forward.
+            </p>
+        </section>
     </div>
     `,
     data(){
@@ -46,7 +77,7 @@ const naotaComponent = {
                 DEBUG && console.log(data);
             });
 
-            getRepoCommits(this.name).then(data => {
+            getRepoCommits(this.name, 12).then(data => {
                 this.commits = data;
 
                 DEBUG && console.log("repo commits:");

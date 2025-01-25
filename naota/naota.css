@@ -1,5 +1,5 @@
 .naota-page header {
-  background-color: var(--background-darker);
+  background-color: var(--background-main);
   display: flex;
   align-items: center;
   justify-items: center;
@@ -28,4 +28,15 @@
   display: flex;
   gap: 10px;
   align-items: flex-start;
+}
+
+.commit-history-container {
+  border-left: 1px solid var(--text-main);
+
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+
+  padding-left: 15px;
 }

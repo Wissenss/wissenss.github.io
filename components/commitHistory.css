@@ -3,9 +3,11 @@
   flex-direction: column;
   gap: 10px;
   justify-content: space;
-  padding: 15px;
+  /* padding: 15px; */
 
   max-width: 500px;
+
+  /* border-left: 1px solid var(--text-main); */
 }
 
 .commit-history .list {
@@ -17,6 +19,11 @@
   display: inline-flex;
   width: 500px;
   text-overflow: ellipsis;
+}
+
+.naota-page .top-bar h3
+{
+  margin: 0px;
 }
 
 .naota-page .top-bar h3 span{
