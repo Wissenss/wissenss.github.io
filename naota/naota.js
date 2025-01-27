@@ -20,8 +20,7 @@ const naotaComponent = {
             <div>
                 <h2>What</h2>
                 <p>
-                    This is my personal discord bot, every now and then I hope in and add some features that I think will be interesting. As of the moment of writing this
-                    words it be used to:
+                    This is my personal discord bot, where I occasionally hop in to add new features that I find interesting. At the time of writing, the bot can:
 
                     <ul>
                         <li>Play music</li>
@@ -31,7 +30,7 @@ const naotaComponent = {
                         <li>Query twitter</li>
                     </ul>
 
-                    If you wish to try it out please <a href="https://discord.com/invite/gwPrgp5fxM">join the discord server here</a>. I don't mantain a public invite link for your own server but DM me on discord and I will be happy to provide one.
+                    If you'd like to try it out, feel free to <a href="https://discord.com/invite/gwPrgp5fxM">join the discord server here</a>. I don't maintain a public invite link for adding the bot to your own server, but if you're interested, send me a DM on Discord, and I'll be happy to provide one!
                 </p>
             </div>
 
